@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #31353e;
+}
+header{
+
+background-color: #edeff1;
+
+padding: 30px 0;
+}
+.container{
+
+width: 1000px;
+
+margin: 0 auto;
+
+overflow: hidden;
+
+position: relative;
+}
+.logo{
+
+width: 20%;
+
+float: left;
+}
+.logo img{
+
+}
+.logo h3{
+
+color: #de5a40;
+
+font-size: 16px;
+
+font-weight: 400;
+
+padding-left: 13px;
+}
+.menu{
+
+width: 80%;
+
+float: left;
+}
+.menu ul{
+
+text-align: right;
+
+list-style: none;
+}
+.menu ul li{
+
+display: inline-block;
+}
+.menu ul li a{
+
+text-decoration: blink;
+
+color: #31353e;
+
+display: block;
+
+text-transform: capitalize;
+
+padding: 10px;
+
+font-size: 16px;
+
+font-weight: 400;
+}
+.menu ul li a:hover{
+	background: #de5a40;
+	color: #fff;
+}
+.menu ul li a{
+	 animation: pulse 5s infinite;
+	 border-radius: 30px;
+
+}
+@keyframes pulse {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #de5a40;
+  }
+}
+.banner-section{
+
+background-image: url(../images/banner.jpeg);
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+height: 1300px;
+
+color: #fff;
+
+background-position: center;
+}
+.overlay{
+	 position: absolute;
+	 background: #2f2627;
+	 width: 100%;
+	 height: 212%;
+	 opacity: 0.8;
+}
+.banner-content{
+
+padding-top: 43%;
+
+padding-bottom: 130px;
+}
+.banner-content h1{
+
+font-size: 70px;
+
+font-weight: 400;
+
+text-align: center;
+}
+.banner-content p{
+
+font-size: 30px;
+
+text-align: center;
+
+font-weight: 400;
+}
+.b1{width: 33.33%;float: left;text-align: center;}
+.b1 img{
+
+max-width: 100%;
+
+border: 6px solid #fff;
+
+border-radius: 75px;
+
+margin-left: 15px;
+}
+.b1 h3{
+
+font-size: 30px;
+
+padding: 10px 0;
+}
+.b1 p{
+
+font-size: 17px;
+
+padding: 0 20px;
+
+font-weight: 200;
+}
+.button{
+
+position: absolute;
+
+bottom: 13%;
+
+left: 50%;
+
+transform: translate(-50%);
+}
+.button a{
+	
+text-decoration: none;
+	
+background: #fff;
+	
+border: 1px solid #fff;
+	
+border-radius: 30px;
+	
+padding: 12px 36px;
+	
+font-weight: 500;
+	
+color: #612316;
+}
+.news-section{
+
+background: #edeff1;
+
+text-align: center;
+
+height: 626px;
+}
+.news-content{
+}
+.news-content h2{
+
+color: #31353e;
+
+font-size: 35px;
+
+padding: 48px 0;
+
+font-weight: 500;
+}
+.news{
+
+width: 33.33%;
+
+float: left;
+
+padding: 8px;
+}
+.news img{
+
+max-width: 95%;
+}
+.news h3{
+
+font-size: 24px;
+
+font-weight: 550;
+
+padding: 15px 0 10px;
+}
+.news p{
+
+font-size: 15px;
+
+font-weight: 300;
+
+padding-bottom: 40px;
+}
+.n-button{
+
+}
+.n-button a{
+	
+text-decoration: none;
+	
+background: #fff;
+	
+padding: 10px 30px;
+	
+border-radius: 30px;
+	
+color: #000000cc;
+}
+.n-button a:hover{
+	background:  #d75d0e;
+
+}
+.signup-section{
+
+height: 355px;
+
+background-image: url(../images/bg.jpg);
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+position: relative;
+}
+.signup-content{
+
+color: #fff;
+
+text-align: center;
+}
+.signup-content h2{
+
+font-size: 30px;
+
+padding: 89px 0 14px;
+
+font-weight: 500;
+}
+.signup-content p{
+
+font-size: 15px;
+
+padding-bottom: 48px;
+}
+form{
+
+width: 88%;
+}
+.signup-content input[type="Email"]{
+	width: 355px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+.signup-content input[ type="submit"]{
+	width: 145px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    background: white;
+    border: 0;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    transform: translateX(-35%);
+    animation-name: move;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  
+}
+@keyframes move{
+	0%{background: #fff;}
+	100%{background: #9e845c;
+ }
+}
+.signup1-section{
+
+height: 1000px;
+
+padding: 50px 0;
+
+background: #fff;
+}
+.signup1{
+
+width: 50%;
+
+float: left;
+}
+.signup1 h2{
+
+font-size: 30px;
+
+padding: 87px 0 20px;
+
+margin-left: 5%;
+}
+.signup1 p{
+
+font-size: 15px;
+
+padding: 5px 0 40px;
+
+margin-left: 5%;
+}
+.s-button{
+
+margin-left: 5%;
+}
+.s-button a{
+
+text-decoration: none;
+
+background: #dd4b2b;
+
+color: #fff;
+
+border-radius: 30px;
+
+padding: 12px 55px;
+
+transition: all 3s ease;
+}
+.signup1 img{
+	
+width: 100%;
+	
+padding: 25px;
+	
+padding-top: 50px;
+}
+.s-button a:hover{
+	background: #4b4e73;
+}
+.list-section{
+
+height: 400px;
+
+background-color: #d75d0e;
+
+color: #fff;
+
+text-align: center;
+}
+.list{width: 33.33%;float: left;padding: 90px 0;}
+.list ul{
+
+}
+.list ul li{
+
+list-style: none;
+
+font-size: 18px;
+
+font-weight: 300;
+
+padding-bottom: 15px;
+}
+footer{
+
+height: 300px;
+
+background-image: url(../images/bg.jpg);
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+position: relative;
+}
+.footer-content{
+
+font-size: 18px;
+
+color: #fff;
+
+text-align: center;
+
+padding: 90px;
+}
+.footer-content p{
+
+padding: 5%;
+}
+span{
+	
+font-weight: 700;
+	
+}
